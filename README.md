@@ -94,18 +94,6 @@ Documentación y presentación del proceso completo de desarrollo del proyecto d
 | 📄 Informe escrito | Inicio (brief/objetivos) → Desarrollo (AI, diseño, maquetas) → Cierre (resultados) |
 | 🎥 Video | 1.5–2 min, 7–10 diapositivas, evidencia el proceso y el sitio funcionando |
 
----
-
-# Proyecto Integrado clase a clase
-## Índice
-1. Experiencia de aprendizaje 1: Estableciendo las bases para trabajar con Javascript
-   - [📕 Semana 01 : Identificando los elementos básicos para trabajar con JavaScript, ver resumen de la semana](./semana-01/resumen-clase.md)
-   - [📕 Semana 02 : Profundizando en el control de JavaScript, ver resumen de la semana](./semana-02/resumen-clase.md)
-
-2. Experiencia de aprendizaje 2: Aplicando JavaScript para intervenir los elementos del DOM
-   - [📕 Semana 03 : Interactuando con JavaScript y los navegadores, ver resumen de la semana](./semana-03/resumen-clase.md)
-   - [📕 Semana 04 : Manipulando el DOM, ver resumen de la semana](./semana-04/resumen-clase.md)
-
 
 ---
 
