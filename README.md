@@ -3,48 +3,25 @@
 **Profesor:** Alejandro Mauricio Becerra Guzmán · `ale.becerrag@profesor.duoc.cl`
 **Semestre:** Segundo semestre 2026 · Inicio: 20 de octubre de 2026
 
-> ⭐ **Primera vez dictando este ramo.** No se cuenta con grabaciones previas. Los enlaces de clase se irán completando semana a semana a medida que se realicen las sesiones sincrónicas.
-
 ---
 
-## 📁 Estructura del Workspace
+## 📖 Proyecto Integrado — Clase a Clase
 
-```
-PROYECTO-INTEGRADO/
-├── README.md                  ← Este archivo (guía del workspace)
-├── anuncios.md                ← Anuncios semanales listos para publicar en AVA
-├── foros.md                   ← Redacción de foros y links de Google Forms
-│
-├── semana-01/
-│   ├── material-clase/        ← Material adicional para la sesión sincrónica
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-02/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-03/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-04/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-05/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-06/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-07/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-├── semana-08/
-│   └── material-semana/
-│       └── material-guia-semana.pdf
-└── semana-09/
-    └── material-semana/
-        ├── examen-transversal.pdf   ← Instrucciones EFT
-        └── rubrica.pdf              ← Rúbrica de evaluación EFT
-```
+Resúmenes de cada clase sincrónica con los contenidos del material guía, infografía y enlace a la presentación.
+
+| Semana | Fecha | Tema | Resumen | Estado |
+|:------:|:-----:|------|:-------:|:------:|
+| 1 | Mar 20-oct | Explorando oportunidades | [📝 Ver resumen](semana-01/resumen-clase.md) | ✅ Disponible |
+| 2 | Mar 27-oct | Creando mapa de navegación y wireframes | [📝 Ver resumen](semana-02/resumen-clase.md) | ✅ Disponible |
+| 3 | Mar 03-nov | Diseñando la interfaz del sitio | [📝 Ver resumen](semana-03/resumen-clase.md) | ✅ Disponible |
+| 4 | Mar 10-nov | Maqueteando el sitio del proyecto | — | ⏳ Pendiente |
+| 5 | Mar 17-nov | Diseño responsivo en acción | — | ⏳ Pendiente |
+| 6 | Mar 24-nov | Desarrollando un CMS dinámico | — | ⏳ Pendiente |
+| 7 | Mar 01-dic | Administración de un CMS dinámico | — | ⏳ Pendiente |
+| 8 | Mar 08-dic | Mejorando interacciones en el CMS | — | ⏳ Pendiente |
+| 9 | Mar 15-dic | Evaluación Final Transversal | — | ⏳ Pendiente |
+
+> 📌 Cada `resumen-clase.md` incluye: infografía de la semana, introducción, RA e IL, contenidos desarrollados, actividad y enlace a la presentación de clase.
 
 ---
 
@@ -119,22 +96,16 @@ Documentación y presentación del proceso completo de desarrollo del proyecto d
 
 ---
 
-## 📝 Cómo usar los archivos de este workspace
+# Proyecto Integrado clase a clase
+## Índice
+1. Experiencia de aprendizaje 1: Estableciendo las bases para trabajar con Javascript
+   - [📕 Semana 01 : Identificando los elementos básicos para trabajar con JavaScript, ver resumen de la semana](./semana-01/resumen-clase.md)
+   - [📕 Semana 02 : Profundizando en el control de JavaScript, ver resumen de la semana](./semana-02/resumen-clase.md)
 
-### `anuncios.md`
-Contiene los anuncios redactados para publicar en AVA cada semana. Cada semana tiene 3 bloques:
-1. **Inicio de actividad** (formativa o sumativa) — con RA, IL, plazo y link de clase
-2. **Retroalimentación** de la actividad anterior
-3. **Grabación y repositorio** de la clase sincrónica
+2. Experiencia de aprendizaje 2: Aplicando JavaScript para intervenir los elementos del DOM
+   - [📕 Semana 03 : Interactuando con JavaScript y los navegadores, ver resumen de la semana](./semana-03/resumen-clase.md)
+   - [📕 Semana 04 : Manipulando el DOM, ver resumen de la semana](./semana-04/resumen-clase.md)
 
-**Pendiente actualizar después de cada clase:**
-- Reemplazar `https://XXXXXXXXXXXXXXXX` por el **enlace real de la grabación**
-
-### `foros.md`
-Contiene la redacción de los foros de consulta semanales y el espacio para los test de Google Forms.
-
-**Pendiente actualizar:**
-- Reemplazar `[AQUÍ_TU_LINK_SEMANA_X]` por el enlace publicado del formulario de **Google Forms**
 
 ---
 
@@ -150,22 +121,6 @@ Contiene la redacción de los foros de consulta semanales y el espacio para los 
 | Validador HTML | [W3C Validator](https://validator.w3.org) |
 | PHP Docs | [php.net](https://www.php.net/docs.php) |
 | JavaScript Docs | [MDN Web Docs](https://developer.mozilla.org/es/docs/Web/JavaScript) |
-
----
-
-## 📋 Nomenclatura de entregas
-
-| Semana | Actividad | Nomenclatura del archivo |
-|--------|-----------|--------------------------|
-| 1 | AF1 | `PInt_S1_NombreApellido.zip` |
-| 2 | AF2 | `PInt_S2_NombreApellido.zip` |
-| 3 | AF3 | `PInt_S3_NombreApellido.zip` |
-| 4 | AF4 | `PInt_S4_NombreApellido.zip` |
-| 5 | AS1 | `PInt_S5_NombreApellido.zip` |
-| 6 | AF5 | `PInt_S6_NombreApellido.zip` |
-| 7 | AS2 | `PInt_S7_NombreApellido.zip` |
-| 8 | AS3 | `PInt_S8_NombreApellido.zip` |
-| 9 | EFT | `PInt_EFT_NombreApellido.pdf` + link video |
 
 ---
 
