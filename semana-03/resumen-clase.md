@@ -153,3 +153,6 @@ Esta semana dimos el salto del esquema funcional al diseño visual. La guía de 
 ---
 
 [📄 Ver Presentación de la Clase](material-clase/presentacion.pdf)
+---
+[📄 Ver Tutorial Figma](tutorial-Figma-desde-cero-verde-vivo.md)
+
