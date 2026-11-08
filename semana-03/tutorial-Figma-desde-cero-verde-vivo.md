@@ -4,7 +4,7 @@ Nov 3, 2026 · @AbecerraGuz
 
 ## Introducción
 
-Al terminar este tutorial tendrás en Figma la Home de Verde Vivo en Desktop, Tablet y Mobile, construida con variables, estilos de texto y componentes reutilizables, más un prototipo básico. Es el mismo proceso que debes aplicar a tu proyecto en la AF3.
+Al terminar este tutorial tendrás en Figma la Home de Verde Vivo en Desktop, Tablet y Mobile, construida con variables, estilos de texto y componentes reutilizables, más un prototipo básico. Es el mismo proceso que debes aplicar a tu proyecto en la AF2.
 
 No necesitas saber Figma. Cada etapa explica qué hacer, dónde hacer clic y cómo comprobar que quedó bien antes de seguir.
 
@@ -687,7 +687,7 @@ Oculta también esta capa para la presentación final, pero consérvala en el ar
 
 ## Etapa 6 · Prototipo
 
-El indicador de la AF3 pide una interfaz **interactiva**. Con estas tres interacciones lo cumples.
+El indicador de la AF2 pide una interfaz **interactiva**. Con estas tres interacciones lo cumples.
 
 Todas se hacen en la pestaña **Prototipo** del panel derecho. Al seleccionar un elemento aparece un círculo en su borde: arrástralo hacia el destino o haz clic en **+** en la sección **Interacciones**.
 
@@ -727,7 +727,7 @@ Selecciona `Home · Desktop` y presiona el botón **Presentar** (triángulo ▷,
 
 ## Etapa 7 · Revisión, entrega y tu propio proyecto
 
-Verde Vivo es el ejemplo. Lo que entregas en la AF3 es **tu proyecto**, construido con este mismo método.
+Verde Vivo es el ejemplo. Lo que entregas en la AF2 es **tu proyecto**, construido con este mismo método.
 
 ### 7.1 Adaptarlo a tu proyecto
 
@@ -791,12 +791,12 @@ Anota las respuestas y lo que cambiaste. Puedes incluirlo como una página más 
 2. En el panel derecho, sección **Exportar**, haz clic en **+**. Elige **JPG** con escala **2x**, o **PDF**.
 3. Repite con: Guía de estilos, Componentes, Home Tablet, Home Mobile y tu wireframe de baja resolución.
 4. Selecciona todos los frames y haz clic en **Exportar** una sola vez.
-5. Comprime los archivos en un **.zip** con el nombre `AF3_TuApellido.zip` y súbelo al AVA.
+5. Comprime los archivos en un **.zip** y súbelo al AVA.
 6. Agrega en la entrega el enlace a tu archivo de Figma (Compartir → Copiar enlace, con permiso **puede ver**).
 
 Recuerda: la pauta evalúa también el brief, el análisis de necesidades, el mapa de navegación y los wireframes. Si al diseñar cambiaste algo de la estructura, actualiza también tu mapa y tu wireframe de baja.
 
-Entrega de la AF3: lunes 9 de noviembre de 2026 a las 23:59.
+Entrega de la AF2: lunes 9 de noviembre de 2026 a las 23:59.
 
 ## Errores frecuentes y soluciones
 

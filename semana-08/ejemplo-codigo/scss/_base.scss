@@ -1,0 +1,85 @@
+// ==========================================================
+// _base.scss · Variables CSS, tipografía y accesibilidad
+// ==========================================================
+@use 'variables' as *;
+
+// Variables nativas de CSS (se pueden cambiar en el navegador, por ejemplo para el modo oscuro de la Semana 8)
+:root {
+  --color-texto: #{$verde-800};
+  --color-texto-suave: #{$neutro-600};
+  --color-titulo: #{$verde-800};
+  --color-enlace: #{$verde-700};
+  --color-fondo: #{$neutro-100};
+  --color-superficie: #{$neutro-0};
+  --color-accion: #{$dorado-700};        // blanco sobre #9A6B22 = 4,67:1 (AA)
+  --color-accion-hover: #{$dorado-800};  // blanco sobre #7F5819 = 6,34:1 (AA)
+  --color-foco: #{$verde-800};
+  --color-hero: #{$verde-100};
+  --color-borde-accion: #{$verde-700};
+}
+
+// Modo oscuro (Semana 8): main.js agrega la clase .tema-oscuro al <body>.
+// Contrastes medidos: texto #F8F5F0 sobre #1C1C1F = 15,6:1 · enlaces #95D5B2 sobre #1C1C1F = 10,1:1
+body.tema-oscuro {
+  --color-texto: #{$neutro-100};
+  --color-texto-suave: #DDD6CC;
+  --color-titulo: #{$neutro-100};
+  --color-enlace: #95D5B2;
+  --color-fondo: #1C1C1F;
+  --color-superficie: #2B2F33;
+  --color-foco: #95D5B2;
+  --color-hero: #{$verde-800};
+  --color-borde-accion: #95D5B2;
+}
+
+body {
+  font-family: $fuente-texto;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3, .h4 {
+  font-family: $fuente-titulos;
+  color: var(--color-titulo);
+  font-weight: 700;
+}
+
+// Escala tipográfica Mobile First
+h1, .h1 {
+  font-size: 2rem;
+
+  @include desde($bp-md) { font-size: 2.5rem; }
+}
+
+h2, .h2 {
+  font-size: 1.625rem;
+
+  @include desde($bp-md) { font-size: 2rem; }
+}
+
+a {
+  color: var(--color-enlace);
+}
+
+// Foco visible para quien navega con teclado
+a, button, .btn, input, textarea, select {
+  &:focus-visible {
+    outline: 3px solid var(--color-foco);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+}
+
+.saltar-contenido {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background: var(--color-superficie);
+  border-radius: $radio;
+
+  &:focus { top: 1rem; }
+}

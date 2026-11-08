@@ -1,0 +1,134 @@
+// ==========================================================
+// _componentes.scss · Chips, tarjetas, detalle y formulario
+// ==========================================================
+@use 'variables' as *;
+
+// Chips de categoría
+.chip {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: $verde-100;
+  color: $verde-800;
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  &--enlace {
+    padding: 0.625rem 1.25rem;         // 44 px de alto aprox.
+    text-decoration: none;
+
+    &:hover { background-color: $verde-200; }
+  }
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+// Tarjeta de planta
+.tarjeta-planta {
+  border: 0;
+  border-radius: $radio-grande;
+  box-shadow: $sombra;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  .card-img-top { height: auto; }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba($verde-800, 0.16);
+  }
+
+  &__titulo { font-size: 1.25rem; }
+
+  &__precio {
+    font-weight: 700;
+    color: $verde-700;
+  }
+}
+
+// Tarjeta de artículo
+.tarjeta-articulo {
+  img {
+    border-radius: $radio-grande;
+    margin-bottom: 1rem;
+  }
+
+  &__titulo {
+    font-size: 1.25rem;
+
+    a { color: var(--color-titulo); }
+  }
+}
+
+// Detalle de planta
+.detalle-planta__precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $verde-700;
+}
+
+.nombre-cientifico { color: var(--color-texto-suave); }
+
+.cuidados__item {
+  height: 100%;
+  padding: 1rem;
+  border-radius: $radio;
+  background-color: var(--color-superficie);
+
+  p { margin-bottom: 0; }
+}
+
+.cuidados__dato { font-weight: 700; }
+
+// Valores de «Nosotros»
+.valor {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: $radio-grande;
+  background-color: var(--color-superficie);
+  box-shadow: $sombra;
+
+  h3 { font-size: 1.25rem; }
+}
+
+// Formulario
+.formulario {
+  padding: 1.25rem;                   // celular
+  border-radius: $radio-grande;
+  background-color: var(--color-superficie);
+  box-shadow: $sombra;
+
+  @include desde($bp-md) { padding: 2rem; }
+}
+
+// Filtro por categoría: chip de la categoría activa (Semana 6)
+.chip--enlace[aria-current="page"] {
+  background-color: $verde-700;
+  color: $neutro-0;                   // 6,39:1 sobre #2D6A4F
+}
+
+// Panel de administración (Semana 7)
+.panel-login {
+  min-height: 100vh;
+  background-color: $verde-100;
+}
+
+.tabla-panel {
+  background-color: var(--color-superficie);
+
+  caption { caption-side: top; }
+
+  // Botones de acción con el mismo alto táctil (44 px)
+  .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}

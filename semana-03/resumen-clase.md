@@ -136,11 +136,15 @@ El diseño accesible garantiza que el sitio sea usable por **todas las personas*
 
 ---
 
-## Actividad Formativa 3 (AF3)
+## Actividad Formativa 2 (AF2) — Creando la interfaz del proyecto
 
 > Crearás el **wireframe de alta resolución** de tu proyecto, agregando detalles visuales (colores, tipografías) para transformar el esquema básico en una representación cercana a la interfaz final. Además, definirás y aplicarás la **guía de estilos** del proyecto.
 
-- 📁 Archivo ZIP · Nomenclatura: `PInt_S3_NombreApellido.zip`
+Parte de tu wireframe de baja de la Semana 2, termina la estructura antes de agregar detalles visuales y aplica tu guía de estilos (colores con buen contraste, tipografías, íconos, imágenes y estados de los elementos interactivos). Considera distintas resoluciones de pantalla y **pide opiniones** sobre tu diseño antes de entregar: el diseño es iterativo.
+
+**¿Qué revisa la pauta?** Brief (IL1), problemas y necesidades (IL2), mapa de navegación (IL4), wireframes (IL5) y diseño de interfaz según la guía de estilos (IL6).
+
+- 📁 **Entrega:** exporta cada mesa de trabajo del wireframe y del diseño en **JPG o PDF** y comprímelas en un archivo **.zip**
 - 📅 Fecha límite: **Lunes 9 de noviembre de 2026 a las 23:59 hrs**
 - 📤 Entrega exclusiva por la plataforma AVA
 

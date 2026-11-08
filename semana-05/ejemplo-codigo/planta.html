@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monstera deliciosa · Verde Vivo</title>
+  <meta name="description" content="Monstera deliciosa: descripción, precio referencial y cuidados.">
+  <!-- Tipografías de la guía de estilos (Google Fonts, SIL Open Font License) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8 (licencia MIT) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- Estilos propios: siempre después de Bootstrap -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Verde Vivo, ir al inicio" width="140" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="plantas.html">Plantas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cuidados.html">Cuidados</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <a class="btn btn-accion ms-lg-3" href="contacto.html">Escríbenos</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="seccion">
+      <div class="container">
+        <nav aria-label="Ruta de navegación">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="plantas.html">Plantas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Monstera deliciosa</li>
+          </ol>
+        </nav>
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-lg-6 order-lg-2">
+            <img src="img/plantas/monstera.svg" class="img-fluid rounded" alt="Ilustración de monstera deliciosa en maceta" width="600" height="450">
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1">
+            <p class="chip">Interior</p>
+            <h1>Monstera deliciosa</h1>
+            <p class="nombre-cientifico"><i>Monstera deliciosa</i></p>
+            <p class="detalle-planta__precio">Desde $14.990</p>
+            <p>Planta de hojas grandes y perforadas que da un aire tropical a cualquier living luminoso.</p>
+            <h2 class="h4">Cuidados básicos</h2>
+            <!-- Nesting: una fila dentro de la columna -->
+            <div class="row g-3 cuidados">
+              <div class="col-6">
+                <div class="cuidados__item"><p class="cuidados__dato">Luz</p><p>Luz indirecta abundante</p></div>
+              </div>
+              <div class="col-6">
+                <div class="cuidados__item"><p class="cuidados__dato">Riego</p><p>Cada 7 a 10 días</p></div>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-accion mt-3">Consultar por esta planta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="container">
+      <div class="row g-3 g-lg-4">
+        <div class="col-12 col-md-4">
+          <p class="pie__marca">Verde Vivo</p>
+          <p>Vivero artesanal en Providencia. Plantas cuidadas a mano y consejos para que crezcan felices.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="pie__titulo">Explora</h2>
+          <ul class="list-unstyled">
+            <li><a href="plantas.html">Plantas</a></li>
+            <li><a href="cuidados.html">Cuidados</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="pie__titulo">Visítanos</h2>
+          <address>
+            Calle Los Aromos 1234, Providencia<br>
+            Lunes a sábado, 10:00 a 19:00<br>
+            <a href="mailto:hola@verdevivo.example">hola@verdevivo.example</a>
+          </address>
+        </div>
+      </div>
+      <p class="pie__legal">© 2026 Verde Vivo · Proyecto ficticio de ejemplo para Proyecto Integrado (Duoc UC).</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: necesario para el menú hamburguesa -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

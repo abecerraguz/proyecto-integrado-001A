@@ -77,6 +77,14 @@ Un presupuesto detallado es clave para planificar el proyecto. Sus componentes p
 - **Pruebas y control de calidad** — período de marcha blanca.
 - **Tiempo y recursos humanos** — costos laborales del equipo.
 - **Contingencias** — porcentaje reservado para imprevistos.
+- **Impuestos y tarifas de plataforma** — por ejemplo, la comisión por transacción de una pasarela de pago como Transbank.
+
+**Hosting y dominio, en detalle:**
+- **Plan de hosting:** compartido, VPS o dedicado según el proyecto; revisa si necesitas base de datos, si los recursos (ancho de banda, disco, memoria) alcanzan y si el plan puede crecer.
+- **Proveedor:** soporte técnico rápido (ojalá 24/7), seguridad, respaldos periódicos y buena reputación.
+- **Dominio:** corto, relevante, fácil de recordar y de deletrear. Si el público está en Chile, considera la extensión `.cl` ([nic.cl](https://www.nic.cl/)).
+
+> 💡 Sé transparente con el cliente sobre los costos y los límites del presupuesto.
 
 ---
 
@@ -105,7 +113,10 @@ Brief  →  Contrabrief  →  Debrief
 
 ### 5. Benchmark
 
-El benchmark es el **análisis comparativo** de referentes y competidores. Permite identificar buenas prácticas del mercado, oportunidades de mejora y definir el valor diferencial del proyecto.
+El benchmark es el **análisis comparativo** de referentes y competidores. Se hace al inicio, una vez que el brief está claro, y se consulta durante todo el proyecto al tomar decisiones.
+
+- **Análisis comparativo:** evalúa sitios similares y exitosos para detectar buenas prácticas de diseño, funcionalidad y experiencia de usuario.
+- **Tendencias:** observa las tendencias actuales del diseño web para que tu proyecto se mantenga vigente.
 
 ---
 
@@ -124,11 +135,29 @@ Al usar recursos gráficos de bancos de imágenes es obligatorio respetar las li
 
 ---
 
+### 7. Arquetipos de usuario y mapa de empatía
+
+Un **arquetipo** (o *persona*) es un **personaje ficticio construido con datos reales** que representa a un grupo de usuarios. Para crearlo:
+
+1. **Investiga** con entrevistas, encuestas, observación y datos demográficos.
+2. **Segmenta** a los usuarios por características similares (edad, comportamientos, necesidades, metas).
+3. **Construye la ficha:** nombre ficticio, foto (nunca de una persona conocida), datos personales, breve descripción, intereses, manejo de la tecnología y objetivos con tu plataforma.
+
+El **mapa de empatía** visualiza lo que el usuario **piensa, siente, ve, oye y dice**, además de sus **dolores** (desafíos) y **ganancias** (lo que quiere lograr). Se actualiza a medida que obtienes nuevos datos.
+
+📚 Recursos del CRAED: [Arquetipo de usuario](https://craed.cl/arquetipo-de-usuario/) · [Mapa de empatía](https://craed.cl/mapa-de-empatia/)
+
+---
+
 ## Actividad Formativa 1 (AF1)
 
 > Realizarás la primera fase del desarrollo de tu proyecto digital: **investigar al cliente y sus usuarios**, **analizar la competencia** y crear el **brief** del proyecto con su presupuesto.
 
-- 📁 Archivo ZIP · Nomenclatura: `PInt_S1_NombreApellido.zip`
+Trabajarás con el **caso del señor Graham**: registrarás los datos de la empresa, analizarás el contexto actual y la competencia, construirás el **brief** (con fases, entregables, presupuesto y una etapa para la gestión de **licencias**), actualizarás **personas y escenarios** y propondrás cómo mejorar la usabilidad y la experiencia de usuario.
+
+**¿Qué revisa la pauta?** Brief (IL1), análisis de problemas y necesidades (IL2) y tipos de licencia de los recursos (IL3).
+
+- 📄 **Entrega:** desarrolla la actividad en el **mismo documento** del enunciado, usando su formato de respuesta
 - 📅 Fecha límite: **Lunes 26 de octubre de 2026 a las 23:59 hrs**
 - 📤 Entrega exclusiva por la plataforma AVA
 

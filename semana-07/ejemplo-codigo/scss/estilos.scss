@@ -1,0 +1,12 @@
+/* Verde Vivo · css/estilos.css — GENERADO desde scss/estilos.scss. No lo edites a mano: edita los .scss y compila. */
+// ==========================================================
+// Verde Vivo · estilos.scss (Semana 6)
+// Archivo principal: importa los parciales en orden.
+// Se compila a css/estilos.css (el que enlaza el HTML).
+// ==========================================================
+@use 'base';
+@use 'header';
+@use 'botones';
+@use 'secciones';
+@use 'componentes';
+@use 'pie';

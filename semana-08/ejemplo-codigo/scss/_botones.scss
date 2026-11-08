@@ -1,0 +1,34 @@
+// ==========================================================
+// _botones.scss
+// ==========================================================
+@use 'variables' as *;
+
+.btn-accion {
+  background-color: var(--color-accion);
+  border-color: var(--color-accion);
+  color: $neutro-0;
+  font-weight: 700;
+  border-radius: $radio;
+  min-height: 44px;                   // tamaño táctil mínimo
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-accion-hover);
+    border-color: var(--color-accion-hover);
+    color: $neutro-0;
+  }
+}
+
+.btn-outline-verde {
+  border: 2px solid var(--color-borde-accion);
+  color: var(--color-borde-accion);
+  font-weight: 700;
+  border-radius: $radio;
+  min-height: 44px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-borde-accion);
+    color: var(--color-fondo);
+  }
+}

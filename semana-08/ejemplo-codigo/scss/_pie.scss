@@ -1,0 +1,35 @@
+// ==========================================================
+// _pie.scss · Pie de página
+// ==========================================================
+@use 'variables' as *;
+
+.pie {
+  padding: 2.5rem 0 1.5rem;
+  background-color: $verde-800;
+  color: $neutro-100;                 // 10,19:1 sobre #1B4332
+
+  @include desde($bp-lg) { padding-top: 3rem; }
+
+  a { color: $verde-100; }            // 9,38:1 sobre #1B4332
+
+  &__marca {
+    font-family: $fuente-titulos;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__titulo {
+    color: $neutro-100;
+    font-family: $fuente-texto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__legal {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba($neutro-100, 0.25);
+    font-size: 0.875rem;
+  }
+}

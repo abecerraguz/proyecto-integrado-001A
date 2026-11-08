@@ -1,0 +1,35 @@
+// ==========================================================
+// _header.scss · Encabezado y navegación
+// ==========================================================
+@use 'variables' as *;
+
+.encabezado {
+  background-color: var(--color-superficie);
+  box-shadow: $sombra;
+
+  .nav-link {
+    color: var(--color-texto);
+    font-weight: 700;
+    padding: 0.75rem 0;               // área táctil cómoda en el celular
+
+    @include desde($bp-lg) { padding: 0.5rem 0.75rem; }
+
+    &.active,
+    &:hover {
+      color: var(--color-enlace);
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+  }
+
+  // En el celular el botón ocupa todo el ancho del menú desplegado
+  .btn-accion {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+
+    @include desde($bp-lg) {
+      width: auto;
+      margin: 0 0 0 1rem;
+    }
+  }
+}

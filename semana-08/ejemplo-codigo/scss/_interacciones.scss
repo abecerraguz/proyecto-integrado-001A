@@ -1,0 +1,61 @@
+// ==========================================================
+// _interacciones.scss · Estilos de las interacciones (Semana 8)
+// ==========================================================
+@use 'variables' as *;
+
+// Menú de accesibilidad
+.accesibilidad {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+
+  @include desde($bp-lg) { margin: 0 0 0 1rem; }
+
+  .btn { min-height: 44px; }
+}
+
+// Transición suave al cambiar de tema (se desactiva si la persona prefiere menos movimiento)
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (prefers-reduced-motion: reduce) { transition: none; }
+}
+
+// Las tarjetas también cambian con el modo oscuro
+.tema-oscuro .card,
+.tema-oscuro .tabla-panel {
+  --bs-card-bg: var(--color-superficie);
+  --bs-table-bg: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+// Resultados del buscador
+.buscador__resultados {
+  margin: 0;
+
+  li { padding: 0.25rem 0; }
+}
+
+// Botón «Volver arriba»
+.volver-arriba {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1030;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  box-shadow: $sombra;
+}
+
+// Vista previa de la imagen en el panel
+.vista-previa {
+  max-width: 200px;
+  border-radius: $radio;
+}
+
+// El logo es verde oscuro: en modo oscuro lo mostramos en blanco para que se vea
+.tema-oscuro .navbar-brand img {
+  filter: brightness(0) invert(1);
+}

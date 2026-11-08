@@ -36,3 +36,13 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Prompt de trabajo docente (privado)
+PROMPT-material-complementario.md
+
+# Respaldos locales de trabajo (privados)
+_respaldo-*/
+_to_delete/
+
+# Proyecto base del CMS (repo propio, contiene credenciales en class/config.php)
+cms-nuevo/

@@ -1,0 +1,36 @@
+// ==========================================================
+// _variables.scss · Guía de estilos de Verde Vivo en Sass
+// ==========================================================
+
+// Colores (primitivos)
+$verde-100: #D8F3DC;
+$verde-200: #B7E4C7;
+$verde-700: #2D6A4F;
+$verde-800: #1B4332;
+$dorado-700: #9A6B22;
+$dorado-800: #7F5819;
+$neutro-0: #FFFFFF;
+$neutro-100: #F8F5F0;
+$neutro-600: #5A6470;
+
+// Tipografía
+$fuente-titulos: 'Playfair Display', Georgia, serif;
+$fuente-texto: 'Lato', Arial, sans-serif;
+
+// Forma
+$radio: 8px;
+$radio-grande: 16px;
+$sombra: 0 4px 20px rgba($verde-800, 0.08);
+
+// Breakpoints: los mismos de Bootstrap
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+// Mixin Mobile First: estilos desde un ancho mínimo hacia arriba
+@mixin desde($ancho) {
+  @media (min-width: $ancho) {
+    @content;
+  }
+}

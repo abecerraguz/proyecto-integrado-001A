@@ -1,0 +1,36 @@
+// ==========================================================
+// _secciones.scss · Secciones y hero (Mobile First)
+// ==========================================================
+@use 'variables' as *;
+
+.seccion {
+  padding: 2.5rem 0;                  // celular
+
+  @include desde($bp-lg) { padding: 4rem 0; }   // escritorio
+
+  &--suave { background-color: var(--color-superficie); }
+}
+
+.hero {
+  padding: 2rem 0;
+  background-color: $verde-100;
+
+  @include desde($bp-lg) { padding: 4rem 0; }
+
+  &__titulo {
+    font-size: 2.25rem;               // celular
+    line-height: 1.15;
+
+    @include desde($bp-md) { font-size: 2.75rem; }   // tablet
+    @include desde($bp-lg) { font-size: 3.5rem; }    // escritorio
+  }
+
+  &__bajada {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+
+    @include desde($bp-md) { font-size: 1.25rem; }
+  }
+
+  &__imagen { border-radius: $radio-grande; }
+}

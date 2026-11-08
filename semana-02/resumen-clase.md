@@ -140,11 +140,18 @@ Los wireframes son el **puente entre la arquitectura de información y el diseñ
 
 ---
 
-## Actividad Formativa 2 (AF2)
+## Actividad Sumativa 1 (AS1) — Creando un wireframe del proyecto
 
 > Realizarás el **mapa de navegación** de tu sitio y un **wireframe de baja resolución** aplicando el proceso completo de arquitectura de información: inventariar los contenidos, diagramarlos en el mapa y crear la primera aproximación gráfica.
 
-- 📁 Archivo ZIP · Nomenclatura: `PInt_S2_NombreApellido.zip`
+1. **Inventario de contenidos:** lista todos los contenidos (textos, imágenes, videos…) y agrúpalos por categorías.
+2. **Mapa del sitio:** a partir del inventario, muestra la estructura y la relación entre secciones, con una jerarquía clara (en digital o en papel).
+3. **Wireframe de baja resolución:** ubica encabezado, contenido principal, barra lateral y elementos de navegación (menús, botones, enlaces), en coherencia con el mapa.
+
+**¿Qué evalúa la rúbrica?** Cinco criterios de 20 puntos cada uno: **brief** (IL1), **problemas y necesidades** (IL2), **licencias** (IL3), **mapa de navegación** (IL4) y **wireframes** (IL5). Incluye tu brief actualizado en la entrega.
+
+- 📁 **Entrega:** guarda todos los documentos y esquemas en **una carpeta** y comprímela en un archivo **.zip**
+- 📝 Si hiciste mejoras durante el diseño, documéntalas en un **informe** y agrégalo a la entrega
 - 📅 Fecha límite: **Lunes 2 de noviembre de 2026 a las 23:59 hrs**
 - 📤 Entrega exclusiva por la plataforma AVA
 

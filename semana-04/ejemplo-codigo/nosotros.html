@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosotros · Verde Vivo</title>
+  <meta name="description" content="La historia de Verde Vivo, vivero artesanal en Providencia.">
+  <!-- Tipografías de la guía de estilos (Google Fonts, SIL Open Font License) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+  <!-- Bootstrap 5.3.8 (licencia MIT) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- Estilos propios: siempre después de Bootstrap -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Verde Vivo, ir al inicio" width="140" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="plantas.html">Plantas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cuidados.html">Cuidados</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <a class="btn btn-accion ms-lg-3" href="contacto.html">Escríbenos</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="seccion">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <h1>Nosotros</h1>
+            <p class="lead">Verde Vivo nació en 2019 en el patio de Camila Torres, en Providencia.</p>
+            <p>Lo que partió como un pasatiempo se transformó en un vivero artesanal: criamos cada planta a mano, sin apuro, y te enseñamos a cuidarla para que te acompañe por años.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/nosotros.svg" class="img-fluid rounded" alt="" width="800" height="600">
+          </div>
+        </div>
+        <h2 class="mt-5">Lo que nos mueve</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4"><div class="valor"><h3>Plantas sanas</h3><p>Solo vendemos plantas criadas y aclimatadas en nuestro vivero.</p></div></div>
+          <div class="col-12 col-md-4"><div class="valor"><h3>Consejo honesto</h3><p>Te recomendamos la planta que calza con tu luz y tu tiempo.</p></div></div>
+          <div class="col-12 col-md-4"><div class="valor"><h3>Cerca de ti</h3><p>Atendemos en persona y respondemos tus dudas por correo.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <p class="pie__marca">Verde Vivo</p>
+          <p>Vivero artesanal en Providencia. Plantas cuidadas a mano y consejos para que crezcan felices.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="pie__titulo">Explora</h2>
+          <ul class="list-unstyled">
+            <li><a href="plantas.html">Plantas</a></li>
+            <li><a href="cuidados.html">Cuidados</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="pie__titulo">Visítanos</h2>
+          <address>
+            Calle Los Aromos 1234, Providencia<br>
+            Lunes a sábado, 10:00 a 19:00<br>
+            <a href="mailto:hola@verdevivo.example">hola@verdevivo.example</a>
+          </address>
+        </div>
+      </div>
+      <p class="pie__legal">© 2026 Verde Vivo · Proyecto ficticio de ejemplo para Proyecto Integrado (Duoc UC).</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: necesario para el menú hamburguesa -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

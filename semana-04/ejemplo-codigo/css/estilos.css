@@ -1,0 +1,275 @@
+/* ==========================================================
+   Verde Vivo · estilos.css (Semana 4)
+   Ejemplo de clase · Proyecto Integrado (GPD2201)
+   Los valores vienen de la guía de estilos de Figma (Semana 3).
+   ========================================================== */
+
+/* ---------- 1. Variables: guía de estilos ---------- */
+:root {
+  /* Colores (primitivos de la guía) */
+  --verde-100: #D8F3DC;
+  --verde-200: #B7E4C7;
+  --verde-700: #2D6A4F;
+  --verde-800: #1B4332;
+  --dorado-700: #9A6B22;
+  --dorado-800: #7F5819;
+  --neutro-0: #FFFFFF;
+  --neutro-100: #F8F5F0;
+  --neutro-600: #5A6470;
+
+  /* Usos (semantic tokens) */
+  --color-texto: var(--verde-800);
+  --color-texto-suave: var(--neutro-600);
+  --color-titulo: var(--verde-800);
+  --color-enlace: var(--verde-700);
+  --color-fondo: var(--neutro-100);
+  --color-superficie: var(--neutro-0);
+  --color-accion: var(--dorado-700);        /* blanco sobre #9A6B22 = 4,67:1 (AA) */
+  --color-accion-hover: var(--dorado-800);  /* blanco sobre #7F5819 = 6,34:1 (AA) */
+  --color-foco: var(--verde-800);
+
+  /* Tipografía */
+  --fuente-titulos: 'Playfair Display', Georgia, serif;
+  --fuente-texto: 'Lato', Arial, sans-serif;
+
+  /* Forma y espacio */
+  --radio: 8px;
+  --radio-grande: 16px;
+  --sombra: 0 4px 20px rgba(27, 67, 50, 0.08);
+  --espacio-seccion: 4rem;
+}
+
+/* ---------- 2. Base ---------- */
+body {
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3, .h4 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-titulo);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-enlace);
+}
+
+/* Foco visible para quien navega con teclado */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+/* Enlace para saltar al contenido: aparece al recibir foco */
+.saltar-contenido {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background: var(--color-superficie);
+  border-radius: var(--radio);
+}
+.saltar-contenido:focus {
+  top: 1rem;
+}
+
+/* ---------- 3. Encabezado ---------- */
+.encabezado {
+  background-color: var(--color-superficie);
+  box-shadow: var(--sombra);
+}
+.encabezado .nav-link {
+  color: var(--color-texto);
+  font-weight: 700;
+}
+.encabezado .nav-link.active,
+.encabezado .nav-link:hover {
+  color: var(--color-enlace);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ---------- 4. Botones ---------- */
+.btn-accion {
+  background-color: var(--color-accion);
+  border-color: var(--color-accion);
+  color: var(--neutro-0);
+  font-weight: 700;
+  border-radius: var(--radio);
+}
+.btn-accion:hover,
+.btn-accion:focus-visible {
+  background-color: var(--color-accion-hover);
+  border-color: var(--color-accion-hover);
+  color: var(--neutro-0);
+}
+
+.btn-outline-verde {
+  border: 2px solid var(--verde-700);
+  color: var(--verde-700);
+  font-weight: 700;
+  border-radius: var(--radio);
+}
+.btn-outline-verde:hover,
+.btn-outline-verde:focus-visible {
+  background-color: var(--verde-700);
+  color: var(--neutro-0);
+}
+
+/* ---------- 5. Secciones ---------- */
+.seccion {
+  padding: var(--espacio-seccion) 0;
+}
+.seccion--suave {
+  background-color: var(--color-superficie);
+}
+
+.hero {
+  padding: 3rem 0;
+  background-color: var(--verde-100);
+}
+.hero__titulo {
+  font-size: 3rem;
+  line-height: 1.15;
+}
+.hero__bajada {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.hero__imagen {
+  border-radius: var(--radio-grande);
+}
+
+/* ---------- 6. Chips de categoría ---------- */
+.chip {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: var(--verde-100);
+  color: var(--verde-800);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+.chip--enlace {
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+}
+.chip--enlace:hover {
+  background-color: var(--verde-200);
+}
+
+/* ---------- 7. Tarjetas ---------- */
+.tarjeta-planta {
+  border: 0;
+  border-radius: var(--radio-grande);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta-planta .card-img-top {
+  height: auto;               /* respeta la proporción 4:3 del width/height del HTML */
+}
+.tarjeta-planta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(27, 67, 50, 0.16);
+}
+.tarjeta-planta__titulo {
+  font-size: 1.25rem;
+}
+.tarjeta-planta__precio,
+.detalle-planta__precio {
+  font-weight: 700;
+  color: var(--verde-700);
+}
+.detalle-planta__precio {
+  font-size: 1.5rem;
+}
+
+.tarjeta-articulo img {
+  border-radius: var(--radio-grande);
+  margin-bottom: 1rem;
+}
+.tarjeta-articulo__titulo {
+  font-size: 1.25rem;
+}
+.tarjeta-articulo__titulo a {
+  color: var(--color-titulo);
+}
+
+/* ---------- 8. Detalle y lectura ---------- */
+.nombre-cientifico {
+  color: var(--color-texto-suave);
+}
+.cuidados dt {
+  font-weight: 700;
+}
+.cuidados dd {
+  margin-bottom: 0.75rem;
+}
+.contenedor-lectura {
+  max-width: 760px;
+}
+.valor {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: var(--radio-grande);
+  background-color: var(--color-superficie);
+  box-shadow: var(--sombra);
+}
+.valor h3 {
+  font-size: 1.25rem;
+}
+
+/* ---------- 9. Formulario ---------- */
+.formulario {
+  padding: 2rem;
+  border-radius: var(--radio-grande);
+  background-color: var(--color-superficie);
+  box-shadow: var(--sombra);
+}
+
+/* ---------- 10. Pie de página ---------- */
+.pie {
+  padding: 3rem 0 1.5rem;
+  background-color: var(--verde-800);
+  color: var(--neutro-100);           /* 10,19:1 sobre #1B4332 */
+}
+.pie a {
+  color: var(--verde-100);            /* 9,38:1 sobre #1B4332 */
+}
+.pie__marca {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.pie__titulo {
+  color: var(--neutro-100);
+  font-family: var(--fuente-texto);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.pie__legal {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(248, 245, 240, 0.25);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* Verde Vivo · css/estilos.css — GENERADO desde scss/estilos.scss. No lo edites a mano: edita los .scss y compila. */
+:root {
+  --color-texto: #1B4332;
+  --color-texto-suave: #5A6470;
+  --color-titulo: #1B4332;
+  --color-enlace: #2D6A4F;
+  --color-fondo: #F8F5F0;
+  --color-superficie: #FFFFFF;
+  --color-accion: #9A6B22;
+  --color-accion-hover: #7F5819;
+  --color-foco: #1B4332;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3, .h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--color-titulo);
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: 1.625rem;
+}
+@media (min-width: 768px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+a {
+  color: var(--color-enlace);
+}
+
+a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.saltar-contenido {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background: var(--color-superficie);
+  border-radius: 8px;
+}
+.saltar-contenido:focus {
+  top: 1rem;
+}
+
+.encabezado {
+  background-color: var(--color-superficie);
+  box-shadow: 0 4px 20px rgba(27, 67, 50, 0.08);
+}
+.encabezado .nav-link {
+  color: var(--color-texto);
+  font-weight: 700;
+  padding: 0.75rem 0;
+}
+@media (min-width: 992px) {
+  .encabezado .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+.encabezado .nav-link.active, .encabezado .nav-link:hover {
+  color: var(--color-enlace);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.encabezado .btn-accion {
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+}
+@media (min-width: 992px) {
+  .encabezado .btn-accion {
+    width: auto;
+    margin: 0 0 0 1rem;
+  }
+}
+
+.btn-accion {
+  background-color: var(--color-accion);
+  border-color: var(--color-accion);
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 8px;
+  min-height: 44px;
+}
+.btn-accion:hover, .btn-accion:focus-visible {
+  background-color: var(--color-accion-hover);
+  border-color: var(--color-accion-hover);
+  color: #FFFFFF;
+}
+
+.btn-outline-verde {
+  border: 2px solid #2D6A4F;
+  color: #2D6A4F;
+  font-weight: 700;
+  border-radius: 8px;
+  min-height: 44px;
+}
+.btn-outline-verde:hover, .btn-outline-verde:focus-visible {
+  background-color: #2D6A4F;
+  color: #FFFFFF;
+}
+
+.seccion {
+  padding: 2.5rem 0;
+}
+@media (min-width: 992px) {
+  .seccion {
+    padding: 4rem 0;
+  }
+}
+.seccion--suave {
+  background-color: var(--color-superficie);
+}
+
+.hero {
+  padding: 2rem 0;
+  background-color: #D8F3DC;
+}
+@media (min-width: 992px) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+.hero__titulo {
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+@media (min-width: 768px) {
+  .hero__titulo {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero__titulo {
+    font-size: 3.5rem;
+  }
+}
+.hero__bajada {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero__bajada {
+    font-size: 1.25rem;
+  }
+}
+.hero__imagen {
+  border-radius: 16px;
+}
+
+.chip {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: #D8F3DC;
+  color: #1B4332;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.chip--enlace {
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+}
+.chip--enlace:hover {
+  background-color: #B7E4C7;
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta-planta {
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(27, 67, 50, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta-planta .card-img-top {
+  height: auto;
+}
+.tarjeta-planta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(27, 67, 50, 0.16);
+}
+.tarjeta-planta__titulo {
+  font-size: 1.25rem;
+}
+.tarjeta-planta__precio {
+  font-weight: 700;
+  color: #2D6A4F;
+}
+
+.tarjeta-articulo img {
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+.tarjeta-articulo__titulo {
+  font-size: 1.25rem;
+}
+.tarjeta-articulo__titulo a {
+  color: var(--color-titulo);
+}
+
+.detalle-planta__precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2D6A4F;
+}
+
+.nombre-cientifico {
+  color: var(--color-texto-suave);
+}
+
+.cuidados__item {
+  height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--color-superficie);
+}
+.cuidados__item p {
+  margin-bottom: 0;
+}
+
+.cuidados__dato {
+  font-weight: 700;
+}
+
+.valor {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: var(--color-superficie);
+  box-shadow: 0 4px 20px rgba(27, 67, 50, 0.08);
+}
+.valor h3 {
+  font-size: 1.25rem;
+}
+
+.formulario {
+  padding: 1.25rem;
+  border-radius: 16px;
+  background-color: var(--color-superficie);
+  box-shadow: 0 4px 20px rgba(27, 67, 50, 0.08);
+}
+@media (min-width: 768px) {
+  .formulario {
+    padding: 2rem;
+  }
+}
+
+.chip--enlace[aria-current=page] {
+  background-color: #2D6A4F;
+  color: #FFFFFF;
+}
+
+.panel-login {
+  min-height: 100vh;
+  background-color: #D8F3DC;
+}
+
+.tabla-panel {
+  background-color: var(--color-superficie);
+}
+.tabla-panel caption {
+  caption-side: top;
+}
+.tabla-panel .btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pie {
+  padding: 2.5rem 0 1.5rem;
+  background-color: #1B4332;
+  color: #F8F5F0;
+}
+@media (min-width: 992px) {
+  .pie {
+    padding-top: 3rem;
+  }
+}
+.pie a {
+  color: #D8F3DC;
+}
+.pie__marca {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.pie__titulo {
+  color: #F8F5F0;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.pie__legal {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(248, 245, 240, 0.25);
+  font-size: 0.875rem;
+}
